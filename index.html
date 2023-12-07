@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -11,222 +11,172 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.css">
 </head>
 <body>
-    <section class="top-nav header-nav">
+
+    <!--Navigation menu-->
+
+    <div class="header-nav  " > 
+        <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary ">
         
-        <div class="logo">
-            <a href="index.html">
-                JK
-            </a>
-  
-        </div>
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-        <div class='menu-button'></div>
-      </label>
-        <ul class="menu">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-      </section>
-    
-        
-       
-    <header id="home">        
-        <div class="main-text">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo float-left" href="#">JK</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                        <ul class="navbar-nav items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+        </nav>
+    </div>
+
+    <!--Header-->
+    <div class="bg-image" >
+        <div class="container h1-text text-center">
             <h1>I'm Joseph</h1>
             <p>A Front-end Developer</p>
 
         </div>
-    </header>
-    <section class="about-container">
-        <div class="portfolio-image">
-            <img src="assets/img/man.jpg" alt="portfolio-picture">
+        
+    </div>
+
+    <!--My Bio-->
+
+    <div class="my-bio-section " id="about">
+        <div class="bio-image">
+            <img class="container" src="assets/img/man.jpg" alt="This is a programmer">
         </div>
-        <div class="about">
-            <div class="section-heading">
+        <div class=" bio-text">
+            <div class="my-bio">
                 <h2> My Bio</h2>
-    
             </div>
-            
-            <div class="about-text">
-                <p>
+            <div class="text-p">
+                <p class="my-bio-p">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     Sed adipisci libero nostrum cum atque sapiente blanditiis non voluptatum expedita incidunt est a, quis eveniet iusto aliquid quas perspiciatis error minus. 
                     Et temporibus adipisci accusamus minus, incidunt placeat itaque molestias exercitationem necessitatibus minima quos possimus eum iusto porro eligendi id repellat provident nemo consequuntur impedit. 
                     Quibusdam odit sequi quos fugiat. Nemo voluptas dolor tempora facere est nostrum non ex ab? 
                     Laboriosam eaque temporibus quae est, vero voluptates mollitia obcaecati omnis neque!
                 </p>
-                <p>
+                <p class="my-bio-p">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Magnam itaque consectetur voluptatum, quisquam consequatur nam veniam a dolorem ratione eaque natus et. 
                     Aut velit incidunt ut obcaecati reiciendis, maxime nulla odit esse nemo? Laudantium, reiciendis fugiat adipisci iusto dolorum aspernatur?
                 </p>
-    
             </div>
-            <div class="my-5" id="about">
-                <div class="skill">
-                    <h3>
-                        HTML5
-                    </h3>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar  value-90" >
-                            <span class="text-align">
-                                90%
-                            </span>
-    
-                        </div>
-    
-                    </div>
-    
-                </div>
-                <div class="skill">
-                    <h3>
-                        CSS3
-                    </h3>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar value-80">
-                            <span>
-                                80%
-                            </span>
-    
-                        </div>
-    
-                    </div>
-    
-                </div>
-                <div class="skill">
-                    <h3>
-                        JavaScript
-                    </h3>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar value-60">
-                            <span>
-                                60%
-                            </span>
-    
-                        </div>
-    
-                    </div>
-    
-                </div>
-                <div class="skill">
-                    <h3>
-                        React
-                    </h3>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar value-40">
-                            <span>
-                                40%
-                            </span>
-    
-                        </div>
-    
-                    </div>
-    
-                </div>
-                <div class="skill">
-                    <h3>
-                        Design
-                    </h3>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar value-70">
-                            <span>
-                                70%
-                            </span>
-    
-                        </div>
-    
-                    </div>
-    
-                </div>
-    
-            </div>
-            <div class="btn-container">
-                 <a href="#contact" class="btn-hire">Hire me</a>
-                 <a href="#" class="btn-cv">Download Cv</a>
-            </div>
-
         </div>
-       
-        
-       
+    </div>
 
+      
 
-    </section>
-
-    <section class="portfolio-container" id="portfolio">
-        <div class="section-heading">
-            <h2> My Portfolio</h2>
+    <!--My Portfolio-->
+    <div class=" my-portfolio-section " id="portfolio">
+        <div class=" my-portfolio">
+            <h2>My Portfolio</h2>
 
         </div>
         <div class="project-container">
-            <div class="single-project">
+            <div class="single-project ">
                 <div class="project-image">
                     <img src="assets/img/programmer.jpg" alt="project"/>
                     <div class="content">
                         <h3>
-                            Project
+                            Project1
                         </h3>
                         <div class="sub">
                             Sub
-
                         </div>
-
                     </div>
                 </div>
-                    
-                
-                
-
-
             </div>
-            <div class="single-project">
-                <div class="project-image">
-                    <img src="assets/img/programmer.jpg" alt="project"/>
-                    <div class="content">    <h3>
-                            Project
-                        </h3>
-                        <div class="sub">
-                            Sub
-
-                        </div>
-
-                    </div>
-                </div>
-                    
-                
-                
-
-
-            </div>
-            <div class="single-project">
+            <div class="single-project ">
                 <div class="project-image">
                     <img src="assets/img/programmer.jpg" alt="project"/>
                     <div class="content">
                         <h3>
-                            Project
+                            Project2
                         </h3>
                         <div class="sub">
                             Sub
-
                         </div>
-
                     </div>
                 </div>
-                    
-                
-                
-
-
             </div>
+            <div class="single-project ">
+                <div class="project-image">
+                    <img src="assets/img/programmer.jpg" alt="project"/>
+                    <div class="content">
+                        <h3>
+                            Project3
+                        </h3>
+                        <div class="sub">
+                            Sub
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-project ">
+                <div class="project-image">
+                    <img src="assets/img/programmer.jpg" alt="project"/>
+                    <div class="content">
+                        <h3>
+                            Project4
+                        </h3>
+                        <div class="sub">
+                            Sub
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-project ">
+                <div class="project-image">
+                    <img src="assets/img/programmer.jpg" alt="project"/>
+                    <div class="content">
+                        <h3>
+                            Project5
+                        </h3>
+                        <div class="sub">
+                            Sub
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-project ">
+                <div class="project-image">
+                    <img src="assets/img/programmer.jpg" alt="project"/>
+                    <div class="content">
+                        <h3>
+                            Project6
+                        </h3>
+                        <div class="sub">
+                            Sub
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    </section>
-    <section class="form-container" id="contact">
+     <!--Footer-->
+    
+    
+    <div class=" form-container" id="contact">
         <h2>Contact Me</h2>
         <form action="https://formspree.io/f/meqbboly" method="POST">
           <input
@@ -243,21 +193,39 @@
           />
           <textarea placeholder="Message" name="message" class="form__input">
           </textarea>
-          <button type="submit" class="btn form__submit">Send Message</button>
+          <button type="submit" class="button-stlye" >Hire Me</button>
         </form>
-    </section>
+    </div>
     
-      <footer>
+    <footer>
         <ul class="footer-nav">
-            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        Copyright &copy; 2023 JK
+        <ul class="footer__social">
+            <li>
+              <a href="#"><span class="icon facebook-icon"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon linkedin-icon"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="icon github-icon"></span></a>
+            </li>
+          </ul>
         
-      </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <div class="container copyright">
+            Copyright &copy; 2023 JK
+
+        </div>
+       
+        
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
      
 </body>
